@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.track-wrapper {
+    width: 200px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 10px;
+    transition: all .4s,
+        background 0s;
+}
+
+.track-wrapper:hover .track-cover {
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, .3);
+}
+
+.track-wrapper:not(:last-child) {
+    margin-right: 20px;
+}
+
+.track-cover {
+    position: relative;
+    margin-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.track-cover:hover {
+    background: #000;
+}
+
+.track-cover img {
+    width: 180px;
+    border-radius: 10px;
+    transition: .4s;
+}
+
+.track-cover:hover img {
+    opacity: .8;
+    transform: scale(1.1);
+    filter: blur(1px);
+}
+
+.track-cover svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 200%);
+    opacity: 0;
+    color: #fff;
+    width: 50px;
+    fill: #fff;
+    transition: all .4s cubic-bezier(.47,1.64,.41,.8);
+}
+
+.track-cover svg:hover {
+    transform: scale(1.5);
+}
+
+.track-cover:hover svg {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+.track-info h3,
+.track-info h4 {
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.track-info h4 {
+    font-weight: 500;
+    margin-top: 5px;
+    margin-bottom: 13px;
+}
+
+.track-controlls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.track-controlls *:not(:last-child) {
+    margin-right: 10px;
+}
+
+.track-controlls span {
+    width: 4px;
+    height: 4px;
+    background-color: #999;
+    border-radius: 50%;
+}
+
+.track-controlls .like {
+    width: 30px;
+    height: 30px;
+    fill: #0089D7;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.track-controlls .next-up {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 3px;
+    fill: #fff;
+    stroke: #fff;
+}
+
+html.light .track-controlls .next-up path {
+    fill: #000;
+    stroke: #000;
+}
+
+.track-controlls .like:hover,
+.track-controlls .next-up:hover {
+    background-color: #ccc;
+}
+
+.track-controlls h6 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #999;
+}
+
+html.dark .track-wrapper {
+    background: #0b0b0b;
+    color: #fff;
+}
+
+html.dark .track-controlls .like:hover,
+html.dark .track-controlls .next-up:hover {
+    background: #131313;
+}

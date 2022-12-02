@@ -1,0 +1,217 @@
+.player .container {
+    padding: 0;
+}
+
+.player {
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 50px;
+    z-index: 100;
+}
+
+.player-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 20px;
+    background: #fff;
+}
+
+.player svg {
+    width: 20px;
+}
+
+.player .track-info {
+    width: 100%;
+    max-width: 167px;
+    min-width: 167px;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.player .track-info .cover {
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    min-width: 40px;
+    max-width: 40px;
+    min-height: 40px;
+    max-height: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.player .track-info .track-name .artist {
+    margin-bottom: 7px;
+    color: #999;
+    cursor: pointer;
+}
+
+.player .track-info .track-name .artist:hover {
+    color: #767676;
+}
+
+.player .player-controlls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.player .player-controlls .play {
+    margin: 0 10px;
+}
+
+.player .player-controlls div {
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 1px;
+}
+
+.player .current-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 30px;
+    width: 542.77px;
+}
+
+.player .current-wrap .slider-range {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    min-width: 250px;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.player .current-wrap span {
+    font-size: 12px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    outline: none;
+}
+
+.player .volume-wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 20px;
+    width: 235px;
+}
+
+.player .volume-wrap .slider-range {
+    width: 100%;
+    max-width: 200px;
+    min-width: 150px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.player .volume-wrap div {
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.player .volume-wrap svg {
+    width: 25px;
+}
+
+.player .player-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.player .player-info div {
+    cursor: pointer;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.player .player-info div:not(:last-child) {
+    margin-right: 20px;
+}
+
+.slider-range {
+    outline: none;
+    border: none;
+    height: 2px;
+}
+
+.slider-range::-webkit-slider-thumb {
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+    transition: .2s;
+}
+
+.slider-range:hover {
+    height: 4px;
+}
+
+.slider-range:hover::-webkit-slider-thumb {
+    transform: scale(1);
+    opacity: 1;
+    transition-delay: .4s;
+}
+
+.player svg {
+    stroke: #000;
+}
+
+html.dark .player,
+html.dark .player-wrapper,
+html.dark .player svg {
+    color: #fff;
+    background: #0b0b0b;
+    fill: #fff;
+    stroke: #fff;
+}
+
+html.dark .player svg {
+    background: none;
+}
+
+.player .play-type {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    border-radius: 7px;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    backdrop-filter: blur(3px);
+    opacity: 0;
+    transition: .2s;
+    transition-delay: 1s;
+}
+
+.player .play-type:hover {
+    opacity: 1;
+    transition-delay: 0;
+    transition: .2s;
+}

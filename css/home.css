@@ -1,0 +1,57 @@
+.track-line {
+    margin-top: 45px;
+}
+
+.track-line.first {
+    margin-top: 25px;
+}
+
+.track-line h4 {
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.controll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+.slider-btn {
+    display: flex;
+    flex-direction: row;
+}
+
+html.dark .slider-btn svg path {
+    fill: #fff;
+}
+
+.slider-btn button {
+    font-size: 34px;
+    margin: 0 10px;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    height: 45px;
+}
+
+.slider-btn button img {
+    width: 34px;
+}
+
+.unactive {
+    opacity: .3;
+    cursor: default;
+}
+
+.tracks {
+    display: flex;
+    overflow: hidden;
+}
