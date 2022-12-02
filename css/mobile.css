@@ -790,7 +790,7 @@ footer.hide {
 }
 
 .track-line::-webkit-scrollbar {
-/*    display: none;*/
+    display: none;
 }
 
 .track-wrapper:not(:last-child) {
