@@ -105,30 +105,6 @@ document.querySelector('.account-control .monoSwitch').addEventListener('mouseup
     document.querySelector('.account-control .monoSwitch').style.backgroundColor = '';
 })
 
-document.querySelector('.account-control ion-icon[name="create"]').addEventListener('mousedown', () => {
-    document.querySelector('.account-control ion-icon[name="create"]').style.backgroundColor = '#000';
-})
-
-document.querySelector('.account-control ion-icon[name="create"]').addEventListener('mouseup', () => {
-    document.querySelector('.account-control ion-icon[name="create"]').style.backgroundColor = '';
-})
-
-document.querySelector('.account-control ion-icon[name="share-social"]').addEventListener('mousedown', () => {
-    document.querySelector('.account-control ion-icon[name="share-social"]').style.backgroundColor = '#000';
-})
-
-document.querySelector('.account-control ion-icon[name="share-social"]').addEventListener('mouseup', () => {
-    document.querySelector('.account-control ion-icon[name="share-social"]').style.backgroundColor = '';
-})
-
-document.querySelector('.account-control ion-icon[name="log-out"]').addEventListener('mousedown', () => {
-    document.querySelector('.account-control ion-icon[name="log-out"]').style.backgroundColor = '#000';
-})
-
-document.querySelector('.account-control ion-icon[name="log-out"]').addEventListener('mouseup', () => {
-    document.querySelector('.account-control ion-icon[name="log-out"]').style.backgroundColor = '';
-})
-
 document.querySelector('.messages-box .controls button').addEventListener('mousedown', () => {
     document.querySelector('.messages-box .controls button').style.backgroundColor = '#000';
 })

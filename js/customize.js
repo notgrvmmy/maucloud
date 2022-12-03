@@ -26,8 +26,8 @@ bottomSet.addEventListener('click', () => {
     topSet.classList.remove('active');
     player.classList.add('pos-b');
     footer.classList.add('pos-t');
-    setTimeout(opacityNullUns, 200);
-    setTimeout(opacityFullUns, 1000);
+    setTimeout(opacityNullUns, 0);
+    setTimeout(opacityFullUns, 700);
     saA.addEventListener('click', () => {
         document.querySelector('.player').classList.toggle('hidTwo');
         footer.classList.toggle('dwn');
@@ -39,16 +39,18 @@ topSet.addEventListener('click', () => {
     topSet.classList.add('active');
     player.classList.remove('pos-b');
     footer.classList.remove('pos-t');
-    setTimeout(opacityNullUns, 200);
-    setTimeout(opacityFullUns, 1000);
+    setTimeout(opacityNullUns, 0);
+    setTimeout(opacityFullUns, 700);
 })
 
 function opacityNullUns() {
     uns.style.opacity = '0';
+    uns.style.transform = 'translateY(200%)';
 }
 
 function opacityFullUns() {
     uns.style.opacity = '1';
+    uns.style.transform = 'translateY(0)';
 }
 
 function profLight() {
@@ -56,8 +58,13 @@ function profLight() {
         player_bgc.style.display = 'block';
         uns.style.background = '';
     } else {
-        player_bgc.style.display = 'none';
-        uns.style.background = '#000';
+        if (document.querySelector('html').classList.contains('dark')) {
+            player_bgc.style.display = 'none';
+            uns.style.background = '#000';
+        } else {
+            player_bgc.style.display = 'none';
+            uns.style.background = '#fff';
+        }
     }
 }
 

@@ -4,7 +4,6 @@ let track_name = document.querySelector('.player .track-current .track-info .tra
 let track_artist = document.querySelector('.player .track-current .track-info .artist');
 
 let playpause_btn = document.querySelector('.player .controlls .play');
-let next_btn = document.querySelector('.player .controlls .next-track');
 
 let curr_time = document.querySelector('.player .controlls .current-time');
 let curr_track = document.createElement('audio');
@@ -181,7 +180,13 @@ function nextTrackSwipe(){
         track_index = 0;
     }
     loadTrack(track_index);
-    playTrack();
+    if (isPlaying == false) {
+        pauseTrack();
+        player_bg.style.opacity = '.1';
+    } else {
+       playTrack();
+       player_bg.style.opacity = '.2';
+    }
     player_bg.style.opacity = '0';
     setTimeout(animBg, 1000);
 }
@@ -192,7 +197,13 @@ function prevTrackSwipe(){
         track_index = music_list.length -1;
     }
     loadTrack(track_index);
-    playTrack();
+    if (isPlaying == false) {
+        pauseTrack();
+        player_bg.style.opacity = '.1';
+    } else {
+       playTrack();
+        player_bg.style.opacity = '.2';
+    }
 }
 
 function animBg() {
@@ -253,14 +264,22 @@ function handleTouchMove(event) {
             setTimeout(animBg, 1000);
         }
     } else {
-        
+        if(yDiff > 0) {
+            
+        }
+        else {
+            console.log('top');
+        }
     }
     
     x1 = null;
     y1 = null;
 }
 
-
+//document.getElementById('minm').addEventListener('click', () => {
+//    track_index = music_list.length + 1;
+//    playpauseTrack();
+//})
 
 
 

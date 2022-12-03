@@ -23,6 +23,10 @@ body {
     color: #000;
 }
 
+body.lock {
+    overflow: hidden;
+}
+
 html.dark body {
     background-color: #000;
     color: #fff;
@@ -226,7 +230,8 @@ html.light .sa-in {
     backdrop-filter: blur(10px);
     opacity: 0;
     visibility: hidden;
-    transition: .1s;
+    transition: all .1s,
+        transform .7s;
     z-index: 900;
 }
 
@@ -373,8 +378,8 @@ footer {
     justify-content: center;
 }
 
-.player .controlls .next-track {
-    width: 20px;
+.player .controlls .like {
+    width: 15px;
     margin-left: 10px;
     height: 50px;
     display: flex;
@@ -382,7 +387,7 @@ footer {
 }
 
 .player .controlls .next-track svg {
-    width: 100%;
+    width: 15px;
 }
 
 .player .controlls .play svg {
@@ -476,9 +481,15 @@ nav a {
     align-items: center;
 }
 
-nav a img {
+nav a svg {
     width: 25px;
     margin-right: 20px;
+    fill: white;
+    stroke: #fff;
+}
+
+nav a svg.link {
+    fill: none;
 }
 
 .page-controlls {
@@ -626,7 +637,7 @@ nav a img {
     position: relative;
 }
 
-.general .link-nav svg {
+.general .link-nav svg.chev {
     stroke: #fff;
     width: 20px;
     height: 20px;
@@ -635,12 +646,6 @@ nav a img {
     right: 10px;
     top: 50%;
 }
-
-.general .link-nav img {
-    width: 25px;
-    margin-right: 20px;
-}
-
 
 .customize {
     opacity: 0;
@@ -814,4 +819,84 @@ footer.hide {
     font-size: 10px;
     font-weight: 500;
     color: #999;
+}
+
+html.light .page-controlls-item {
+    background: #fff;
+}
+
+html.light .page-controlls-item svg {
+    fill: #000;
+    stroke: #000;
+}
+
+.themeSwitch svg {
+    transition: .2s;
+}
+
+.themeSwitch.rotate svg {
+    transform: rotate(180deg);
+}
+
+html.light .uns {
+    background: rgba(255, 255, 255, .6);
+}
+
+html.light .uns .close svg {
+    stroke: #000;
+}
+
+html.light footer {
+    background-color: #fff;
+}
+
+html.light footer svg {
+    fill: #000;
+    stroke: #000;
+}
+
+html.light .player .track-name {
+    color: #fff;
+}
+
+html.light header {
+    background: linear-gradient(180deg, #fff, rgba(255,255,255,0));
+}
+
+html.light .customize .head {
+    background: #fff;
+    color: #000;
+}
+
+html.light .customize .head .back svg {
+    stroke: #000;
+}
+
+html.light .set {
+    background: rgba(255, 255, 255, .5);
+    color: #000;
+    border: 1px solid #999;
+}
+
+html.light .set .desc {
+    color: #1d1d1d;
+}
+
+html.light .check-gen {
+    --first-color: #fff;
+}
+
+html.light nav a {
+    background: #fff;
+}
+
+html.light nav a svg,
+html.light .general .link-nav svg.chev {
+    fill: #000;
+    stroke: #000;
+}
+
+html.light nav a svg.link,
+html.light .general .link-nav svg.chev {
+    fill: none;
 }
