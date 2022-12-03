@@ -55,3 +55,96 @@ html.dark .slider-btn svg path {
     display: flex;
     overflow: hidden;
 }
+
+.download-window {
+    background: #0b0b0b;
+    width: 400px;
+    height: 200px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    padding: 10px;
+    box-shadow: 4px 6px 20px #000;
+    z-index: 101;
+    border-radius: 7px;
+    transform: translateY(200%);
+    transition: all .7s cubic-bezier(.47,1.64,.41,.8);
+}
+
+html.light .download-window {
+    background: #fff;
+    box-shadow: 4px 6px 20px #999;
+}
+
+html.light .download-window h3 {
+    color: #1d1d1d;
+    font-weight: 400;
+}
+
+.download-window.active {
+    transform: translateY(0);
+}
+
+.download-window h3 {
+    font-size: 15px;
+    font-weight: 200;
+    margin-bottom: 15px;
+}
+
+.download-window .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.download-window .info .cover {
+    width: 100px;
+    height: 100px;
+    background: url('../img/artworks-018tcsaNdUylK6ZG-Zqmzmg-t500x500.jpg');
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    border-radius: 7px;
+}
+
+.download-window .info .track-info .artist {
+    margin-bottom: 20px;
+}
+
+.download-window .buttons {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.download-window .buttons button {
+    padding: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.download-window .buttons button:hover {
+    opacity: .8;
+}
+
+.download-window .buttons .cancel {
+    color: #ff0000;
+    margin-right: 20px;
+    border: 1px solid #ff0000;
+    font-weight: 500;
+}
+
+.download-window .buttons .cancel:hover {
+    background: #ff0000;
+    color: #fff;
+}
+
+.download-window .buttons .download {
+    color: #fff;
+    background: #0089D7;
+    font-weight: 300;
+    border: 1px solid #0089D7;
+}

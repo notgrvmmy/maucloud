@@ -149,7 +149,6 @@
                 </div>
             </div>
             <div class="account-nav">
-<!--                <a><img src="img/icons/upload.svg" alt="">Upload</a>-->
                 <a><img src="img/icons/plane.svg" alt="">Submit your idea</a>
                 <a><img src="img/icons/dollar.svg" alt="">Support us</a>
                 <a><img src="img/icons/link.svg" alt="">Our channel</a>
@@ -682,6 +681,7 @@
                             <path d="M352 168H144a80.24 80.24 0 00-80 80v16M192 392l-48-48 48-48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
                             <path d="M160 344h208a80.24 80.24 0 0080-80v-16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/>
                         </svg>
+                        <span>1</span>
                     </div>
                     <div class="track-name">
                         <div class="artist">Unknown</div>
@@ -738,13 +738,26 @@
                             <path d="M288 256c52.79 0 99.43-49.71 104-110.82 2.27-30.7-7.36-59.33-27.12-80.6C345.33 43.57 318 32 288 32c-30.24 0-57.59 11.5-77 32.38-19.63 21.11-29.2 49.8-27 80.78C188.49 206.28 235.12 256 288 256zM495.38 439.76c-8.44-46.82-34.79-86.15-76.19-113.75C382.42 301.5 335.83 288 288 288s-94.42 13.5-131.19 38c-41.4 27.6-67.75 66.93-76.19 113.75-1.93 10.73.69 21.34 7.19 29.11A30.94 30.94 0 00112 480h352a30.94 30.94 0 0024.21-11.13c6.48-7.77 9.1-18.38 7.17-29.11zM104 288v-40h40a16 16 0 000-32h-40v-40a16 16 0 00-32 0v40H32a16 16 0 000 32h40v40a16 16 0 0032 0z"/>
                         </svg>
                     </div>
-                    <div class="addtoplaylist">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-                            <path d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48zm80 224h-64v64a16 16 0 01-32 0v-64h-64a16 16 0 010-32h64v-64a16 16 0 0132 0v64h64a16 16 0 010 32z"/>
-                        </svg>
+                    <div class="downloadBtn" onclick="actDwnlWin()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M472.7 189.5c-13.26-8.43-29.83-14.56-48.08-17.93A16 16 0 01412 159.28c-7.86-34.51-24.6-64.13-49.15-86.58C334.15 46.45 296.21 32 256 32c-35.35 0-68 11.08-94.37 32a150.13 150.13 0 00-41.95 52.83A16.05 16.05 0 01108 125.8c-27.13 4.9-50.53 14.68-68.41 28.7C13.7 174.83 0 203.56 0 237.6 0 305 55.93 352 136 352h104V224.45c0-8.61 6.62-16 15.23-16.43A16 16 0 01272 224v128h124c72.64 0 116-34.24 116-91.6 0-30.05-13.59-54.57-39.3-70.9zM240 425.42l-36.7-36.64a16 16 0 00-22.6 22.65l64 63.89a16 16 0 0022.6 0l64-63.89a16 16 0 00-22.6-22.65L272 425.42V352h-32z"/></svg>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    
+    <div class="download-window">
+        <h3>Download this track on your PC?</h3>
+        <div class="info">
+        <div class="cover"></div>
+        <div class="track-info">
+        <div class="artist">Unknown</div>
+        <div class="track-name">Unknown</div>
+        </div>
+        </div>
+        <div class="buttons">
+            <button class="cancel" onclick="cancelDownload()">Cancel</button>
+            <button class="download" onclick="applyDownload()">Download</button>
         </div>
     </div>
     

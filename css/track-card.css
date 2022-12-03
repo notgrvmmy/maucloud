@@ -85,11 +85,11 @@ body {
 .track-info h4 {
     font-size: 16px;
     text-transform: capitalize;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .track-info h4 {
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 5px;
     margin-bottom: 13px;
 }
