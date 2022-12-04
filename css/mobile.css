@@ -900,3 +900,22 @@ html.light nav a svg.link,
 html.light .general .link-nav svg.chev {
     fill: none;
 }
+
+.spinner {
+   width: 20px;
+   height: 20px;
+   border-radius: 50%;
+   background: radial-gradient(farthest-side,#ffffff 94%,#0000) top/3.8px 3.8px no-repeat,
+          conic-gradient(#0000 30%,#ffffff);
+   -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 3.8px),#000 0);
+   animation: spinner-c7wet2 0.6s infinite linear;
+    position: absolute;
+    left: 15px;
+    z-index: -1;
+}
+
+@keyframes spinner-c7wet2 {
+   100% {
+      transform: rotate(1turn);
+   }
+}

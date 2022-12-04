@@ -216,6 +216,16 @@ function animBg() {
     player_bg.style.opacity = '.2';
 }
 
+function playerAnim() {
+    document.querySelector('.player').style.transform = 'scale(.95)';
+    document.querySelector('.player').style.borderRadius = '7px';
+}
+
+function playerAnimEnd() {
+    document.querySelector('.player').style.transform = 'scale(1)';
+    document.querySelector('.player').style.borderRadius = '0';
+}
+
 function seekTo(){
     let seekto = curr_track.duration * (seek_slider.value / 100);
     curr_track.currentTime = seekto;
@@ -237,6 +247,15 @@ function setUpdate(){
 
 document.querySelector('.player').addEventListener('touchstart', handleTouchStart, false);
 document.querySelector('.player').addEventListener('touchmove', handleTouchMove, false);
+document.querySelector('.player').addEventListener('toucstart', holdTouch, true);
+
+function holdTouch(event) {
+    
+    const firstTouch = event.touches[0];
+    x1 = firstTouch.clientX;
+    y1 = firstTouch.clientY;
+    console.log('hold');
+}
 
 let x1 = null;
 let y1 = null;
@@ -263,11 +282,15 @@ function handleTouchMove(event) {
             prevTrackSwipe();
             player_bg.style.opacity = '0';
             setTimeout(animBg, 1000);
+            playerAnim();
+            setTimeout(playerAnimEnd, 500);
         }
         else {
             nextTrackSwipe();
             player_bg.style.opacity = '0';
             setTimeout(animBg, 1000);
+            playerAnim();
+            setTimeout(playerAnimEnd, 500);
         }
     } else {
         if(yDiff > 0) {

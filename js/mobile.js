@@ -21,10 +21,12 @@ saA.addEventListener('click', () => {
 
 accBtn.addEventListener('click', () => {
     uns.classList.add('vis');
+    document.querySelector('body').classList.add('lock');
 })
 
 accCloseBtn.addEventListener('click', () => {
     uns.classList.remove('vis');
+    document.querySelector('body').classList.remove('lock');
 })
 
 homeB.addEventListener('click', () => {
