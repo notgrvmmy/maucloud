@@ -263,6 +263,7 @@ function handleTouchStart(event) {
     x1 = firstTouch.clientX;
     y1 = firstTouch.clientY;
     playerAnim();
+    window.navigator.vibrate(200);
 }
 
 function handleTouchEnd(event) {
