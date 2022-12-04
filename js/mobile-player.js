@@ -217,7 +217,7 @@ function animBg() {
 }
 
 function playerAnim() {
-    document.querySelector('.player').style.transform = 'scale(.95)';
+    document.querySelector('.player').style.transform = 'scale(.98)';
     document.querySelector('.player').style.borderRadius = '7px';
 }
 
@@ -247,14 +247,12 @@ function setUpdate(){
 
 document.querySelector('.player').addEventListener('touchstart', handleTouchStart, false);
 document.querySelector('.player').addEventListener('touchmove', handleTouchMove, false);
-document.querySelector('.player').addEventListener('toucstart', holdTouch, true);
+document.querySelector('.player').addEventListener('touchend', handleTouchEnd, false);
 
 function holdTouch(event) {
-    
     const firstTouch = event.touches[0];
     x1 = firstTouch.clientX;
     y1 = firstTouch.clientY;
-    console.log('hold');
 }
 
 let x1 = null;
@@ -264,6 +262,13 @@ function handleTouchStart(event) {
     const firstTouch = event.touches[0];
     x1 = firstTouch.clientX;
     y1 = firstTouch.clientY;
+    playerAnim();
+}
+
+function handleTouchEnd(event) {
+    const touch = event.touches[0];
+    playerAnimEnd();
+    
 }
 
 function handleTouchMove(event) {
@@ -282,8 +287,7 @@ function handleTouchMove(event) {
             prevTrackSwipe();
             player_bg.style.opacity = '0';
             setTimeout(animBg, 1000);
-            playerAnim();
-            setTimeout(playerAnimEnd, 500);
+            
         }
         else {
             nextTrackSwipe();
@@ -304,15 +308,3 @@ function handleTouchMove(event) {
     x1 = null;
     y1 = null;
 }
-
-//document.getElementById('minm').addEventListener('click', () => {
-//    track_index = music_list.length + 1;
-//    playpauseTrack();
-//})
-
-
-
-
-
-
-
