@@ -1,0 +1,259 @@
+.player {
+    width: calc(100% - 350px);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 80px;
+    background-color: #1d1d1d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: row;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 100;
+}
+
+article.min ~ .player {
+     width: calc(100% - 80px);
+}
+
+.player .track-cover {
+    min-width: 65px;
+    max-width: 65px;
+    min-height: 65px;
+    max-height: 65px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    opacity: .8;
+    transform: scale(.8);
+    transition: opacity .4s,
+        transform .4s cubic-bezier(.47,1.64,.41,.8);
+}
+
+.track-current {
+    display: flex;
+    align-items: center;
+}
+
+.track-current span {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+.track-current span:last-child {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+.player .track-info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    width: 100%;
+    min-width: 150px;
+    max-width: 200px;
+}
+
+.player .track-info .artist {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.player .controlls {
+    display: flex;
+    flex-direction: row;
+    margin-right: 40px;
+}
+
+.player .controlls svg {
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+}
+
+.player .controlls .controll-button {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.player .controlls .play-pause {
+    margin: 0 10px;
+}
+
+.player .controlls .controll-button:hover {
+    background-color: #131313;
+}
+
+.track-current {
+    width: 100%;
+    min-width: 300px;
+    max-width: 900px;
+    transition: .2s;
+}
+
+.current-range {
+    width: 100%;
+    height: 7px;
+    appearance: none;
+    border-radius: 35px;
+    overflow: hidden;
+    background: #131313;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.current-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 7px;
+    background-color: #00F0FF;
+    border-radius: 35px;
+    border: none;
+    box-shadow: -409px 0 0 400px #00F0FF;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.current-range:hover::-webkit-slider-thumb {
+    border: 1px solid #131313;
+    height: 15px;
+    width: 15px;
+}
+
+.current-range:hover {
+    height: 15px;
+}
+
+.volume-current {
+    width: 100%;
+    min-width: 130px;
+    max-width: 300px;
+    height: auto;
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    transition: .1s ease-in-out;
+}
+
+.volume-current .volume-ico {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.volume-current input {
+    width: 100%;
+    height: 7px;
+    cursor: pointer;
+    appearance: none;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #131313;
+    border: none;
+    outline: none;
+    transition: .2s;
+}
+
+.volume-current input::-webkit-slider-thumb {
+    appearance: none;
+    width: 15px;
+    height: 7px;
+    background-color: #00F0FF;
+    border-radius: 7px;
+    border: none;
+    box-shadow: -409px 0 0 400px #00F0FF;
+    transition: .2s;
+}
+
+.volume-current input:hover::-webkit-slider-thumb {
+    border: 1px solid #131313;
+    height: 15px;
+}
+
+.volume-current input:hover {
+    height: 15px;
+}
+
+.volume-current .volume-ico svg {
+    fill: #fff;
+    stroke: #fff;
+    width: 25px;
+}
+
+.second-controlls {
+    display: flex;
+    flex-direction: row;
+}
+
+.second-controlls .like,
+.second-controlls .next-up {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.second-controlls .like:hover,
+.second-controlls .next-up:hover {
+    background-color: #131313;
+}
+
+.second-controlls svg {
+    width: 20px;
+    height: 20px;
+    stroke: #fff;
+}
+
+@media (max-width: 1366px) {
+    .player {
+        width: calc(100% - 250px);
+        height: 60px;
+    }
+    .player .track-cover {
+        min-width: 45px;
+        max-width: 45px;
+        min-height: 45px;
+        max-height: 45px;
+    }
+    .player .track-info .artist {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    .player .track-info .track-name {
+        font-size: 10px;
+    }
+    .player .controlls .controll-button {
+        width: 30px;
+        height: 30px;
+        border-radius: 5px;
+    }
+    .player .controlls .play-pause {
+        margin: 0 10px;
+    }
+    .player .controlls .controll-button svg {
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#131313">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/standart.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/player.css">
+    
+    <title>MauCloud</title>
+    <meta name="description" content="Music at your fingertips. Start using magic, dont't miss a moment.">
+</head>
+<body>
+    <header>
+        <div class="search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"/></svg>
+        <input type="text" onfocus="searchColorW()" onblur="searchColorB()" placeholder="Search...">
+        </div>
+        <div class="rt">
+        <img src="img/maucloud_logo_blue.svg" alt="">
+        </div>
+    </header>
+    <article>
+        <div class="container">
+            <div class="menu">
+                <h1>Menu</h1>
+                <nav>
+                    <div class="menu-nav active home">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256M400 179V64h-48v69" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                        Home
+                    </div>
+                    <div class="menu-nav library">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M64 480H48a32 32 0 01-32-32V112a32 32 0 0132-32h16a32 32 0 0132 32v336a32 32 0 01-32 32zM240 176a32 32 0 00-32-32h-64a32 32 0 00-32 32v28a4 4 0 004 4h120a4 4 0 004-4zM112 448a32 32 0 0032 32h64a32 32 0 0032-32v-30a2 2 0 00-2-2H114a2 2 0 00-2 2z"/><rect x="112" y="240" width="128" height="144" rx="2" ry="2"/><path d="M320 480h-32a32 32 0 01-32-32V64a32 32 0 0132-32h32a32 32 0 0132 32v384a32 32 0 01-32 32zM495.89 445.45l-32.23-340c-1.48-15.65-16.94-27-34.53-25.31l-31.85 3c-17.59 1.67-30.65 15.71-29.17 31.36l32.23 340c1.48 15.65 16.94 27 34.53 25.31l31.85-3c17.59-1.67 30.65-15.71 29.17-31.36z"/></svg>
+                        Library
+                    </div>
+                    <div class="menu-nav yns">
+                        <img src="img/avatar.jpg" alt="">
+                        You and settings
+                    </div>
+                </nav>
+                <div class="playlists">
+                   <h1>Playlist <span>(2)</span></h1>
+                    <div class="playlist lt">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                        </div>
+                        Liked tracks
+                    </div>
+                    <div class="playlist saved">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                        </div>
+                        Saved
+                    </div>
+                    <div class="playlist create">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="80" d="M256 112v288M400 256H112"/></svg>
+                        </div>
+                        Create new
+                    </div>
+                </div>
+                <div class="width-switcher">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fullOff">
+                        <path d="M17.7778 8.33335H12.45L17.5889 3.19446C17.6799 3.08819 17.7274 2.95148 17.722 2.81166C17.7166 2.67184 17.6587 2.5392 17.5597 2.44026C17.4608 2.34132 17.3282 2.28336 17.1883 2.27796C17.0485 2.27256 16.9118 2.32012 16.8055 2.41113L11.6667 7.55002V2.22224C11.6667 2.0749 11.6081 1.93359 11.5039 1.82941C11.3997 1.72522 11.2584 1.66669 11.1111 1.66669C10.9638 1.66669 10.8224 1.72522 10.7183 1.82941C10.6141 1.93359 10.5555 2.0749 10.5555 2.22224V9.44446H17.7778C17.9251 9.44446 18.0664 9.38593 18.1706 9.28175C18.2748 9.17756 18.3333 9.03625 18.3333 8.88891C18.3333 8.74157 18.2748 8.60026 18.1706 8.49607C18.0664 8.39188 17.9251 8.33335 17.7778 8.33335Z"/>
+                        <path d="M2.22221 10.5555C2.07487 10.5555 1.93356 10.6141 1.82937 10.7183C1.72519 10.8224 1.66666 10.9638 1.66666 11.1111C1.66666 11.2584 1.72519 11.3997 1.82937 11.5039C1.93356 11.6081 2.07487 11.6667 2.22221 11.6667H7.54999L2.40555 16.8055C2.34739 16.8553 2.30015 16.9166 2.26681 16.9856C2.23346 17.0545 2.21472 17.1296 2.21177 17.2061C2.20881 17.2826 2.22171 17.3589 2.24964 17.4302C2.27757 17.5015 2.31993 17.5662 2.37407 17.6203C2.42821 17.6745 2.49296 17.7169 2.56425 17.7448C2.63555 17.7727 2.71184 17.7856 2.78835 17.7827C2.86486 17.7797 2.93994 17.761 3.00886 17.7276C3.07779 17.6943 3.13907 17.647 3.18888 17.5889L8.33332 12.45V17.7778C8.33332 17.9251 8.39185 18.0664 8.49604 18.1706C8.60023 18.2748 8.74154 18.3333 8.88888 18.3333C9.03622 18.3333 9.17753 18.2748 9.28172 18.1706C9.3859 18.0664 9.44443 17.9251 9.44443 17.7778V10.5555H2.22221Z"/>
+                    </svg>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="fullOn">
+                        <path d="M10.5556 2.22217C10.4082 2.22217 10.2669 2.2807 10.1627 2.38489C10.0585 2.48907 10 2.63038 10 2.77772C10 2.92507 10.0585 3.06637 10.1627 3.17056C10.2669 3.27475 10.4082 3.33328 10.5556 3.33328H15.8833L10.7444 8.47217C10.6863 8.52197 10.6391 8.58326 10.6057 8.65218C10.5724 8.72111 10.5536 8.79618 10.5507 8.87269C10.5477 8.9492 10.5606 9.0255 10.5885 9.09679C10.6165 9.16808 10.6588 9.23283 10.713 9.28697C10.7671 9.34111 10.8319 9.38348 10.9032 9.41141C10.9744 9.43934 11.0507 9.45223 11.1273 9.44928C11.2038 9.44632 11.2788 9.42758 11.3478 9.39424C11.4167 9.36089 11.478 9.31366 11.5278 9.2555L16.6667 4.11661V9.44439C16.6667 9.59173 16.7252 9.73304 16.8294 9.83723C16.9336 9.94141 17.0749 9.99995 17.2222 9.99995C17.3696 9.99995 17.5109 9.94141 17.6151 9.83723C17.7192 9.73304 17.7778 9.59173 17.7778 9.44439V2.22217H10.5556Z"/>
+                        <path d="M2.22223 10.5556C2.22223 10.4082 2.28076 10.2669 2.38495 10.1627C2.48913 10.0585 2.63044 10 2.77778 10C2.92513 10 3.06643 10.0585 3.17062 10.1627C3.27481 10.2669 3.33334 10.4082 3.33334 10.5556V15.8833L8.47223 10.7444C8.52203 10.6863 8.58332 10.6391 8.65225 10.6057C8.72117 10.5724 8.79624 10.5536 8.87275 10.5507C8.94927 10.5477 9.02556 10.5606 9.09685 10.5885C9.16814 10.6165 9.23289 10.6588 9.28703 10.713C9.34118 10.7671 9.38354 10.8319 9.41147 10.9032C9.4394 10.9744 9.45229 11.0507 9.44934 11.1273C9.44638 11.2038 9.42764 11.2788 9.3943 11.3478C9.36095 11.4167 9.31372 11.478 9.25556 11.5278L4.11667 16.6667H9.44445C9.59179 16.6667 9.7331 16.7252 9.83729 16.8294C9.94148 16.9336 10 17.0749 10 17.2222C10 17.3696 9.94148 17.5109 9.83729 17.6151C9.7331 17.7192 9.59179 17.7778 9.44445 17.7778H2.22223V10.5556Z"/>
+                    </svg>
+                    Minimize
+                </div>
+            </div>
+        </div>
+    </article>
+    <div class="player">
+        <div class="track-cover"></div>
+        <div class="track-info">
+            <span class="artist">bsterthegawd</span>
+            <span class="track-name">Just for you.</span>
+        </div>
+        <div class="controlls">
+            <div class="play-back controll-button" onclick="prevTrack()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M112 64a16 16 0 0116 16v136.43L360.77 77.11a35.13 35.13 0 0135.77-.44c12 6.8 19.46 20 19.46 34.33v290c0 14.37-7.46 27.53-19.46 34.33a35.14 35.14 0 01-35.77-.45L128 295.57V432a16 16 0 01-32 0V80a16 16 0 0116-16z"/></svg>
+            </div>
+            <div class="play-pause controll-button" onclick="playpauseTrack()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+            </div>
+            <div class="play-next controll-button" onclick="nextTrack()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M400 64a16 16 0 00-16 16v136.43L151.23 77.11a35.13 35.13 0 00-35.77-.44C103.46 83.47 96 96.63 96 111v290c0 14.37 7.46 27.53 19.46 34.33a35.14 35.14 0 0035.77-.45L384 295.57V432a16 16 0 0032 0V80a16 16 0 00-16-16z"/></svg>
+            </div>
+        </div>
+        <div class="track-current">
+            <span class="current-time">0:00</span>
+            <input class="current-range" type="range" min="0" max="100" value="0" onchange="seekTo()" onmousedown="pauseTrack()" onmouseup="playTrack()" onmousedown="volMin()" onmouseup="volMax()">
+            <span class="total-duration">0:00</span>
+        </div>
+        <div class="volume-current">
+            <div class="volume-ico" onclick="volumeMute()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M264 416.19a23.92 23.92 0 01-14.21-4.69l-.66-.51-91.46-75H88a24 24 0 01-24-24V200a24 24 0 0124-24h69.65l91.46-75 .66-.51A24 24 0 01288 119.83v272.34a24 24 0 01-24 24zM352 336a16 16 0 01-14.29-23.18c9.49-18.9 14.3-38 14.3-56.82 0-19.36-4.66-37.92-14.25-56.73a16 16 0 0128.5-14.54C378.2 208.16 384 231.47 384 256c0 23.83-6 47.78-17.7 71.18A16 16 0 01352 336z"/><path d="M400 384a16 16 0 01-13.87-24C405 327.05 416 299.45 416 256c0-44.12-10.94-71.52-29.83-103.95A16 16 0 01413.83 136C434.92 172.16 448 204.88 448 256c0 50.36-13.06 83.24-34.12 120a16 16 0 01-13.88 8z"/></svg>
+            </div>
+                <input class="volume-range" type="range" min="0" max="100" value="70" onchange="setVolume()" onmousemove="setVolume()">
+        </div>
+        <div class="second-controlls">
+            <div class="like">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+            </div>
+            <div class="next-up">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+            </div>
+        </div>
+    </div>
+    
+    <div class="home-wrap">
+        <div class="containerCont">
+            <div class="track-wrap">
+                <div class="track">
+                    <div class="cover">
+                    <img src="img/artworks-018tcsaNdUylK6ZG-Zqmzmg-t500x500.jpg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </div>
+                    <div class="track-info">
+                        <div class="artist">bsterthegawd</div>
+                        <div class="name">Just for you.</div>
+                        <div class="duration">2:23</div>
+                    </div>
+                </div>
+                <div class="track-controls">
+                    <div class="save" title="Add to Saved">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                    <div class="add-to-nextup" title="Add to next-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="track-wrap">
+                <div class="track">
+                    <div class="cover">
+                    <img src="img/artworks-5UYmyfkrHXX0Xx1M-miKWhw-t500x500.jpg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </div>
+                    <div class="track-info">
+                        <div class="artist">Stedry</div>
+                        <div class="name">Arkham</div>
+                        <div class="duration">1:59</div>
+                    </div>
+                </div>
+                <div class="track-controls">
+                    <div class="save" title="Add to Saved">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                    <div class="add-to-nextup" title="Add to next-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="track-wrap">
+                <div class="track">
+                    <div class="cover">
+                    <img src="img/ab67616d0000b2734d7cfa6ee20d2b0445b7dd1d.jpg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </div>
+                    <div class="track-info">
+                        <div class="artist">JsMn</div>
+                        <div class="name">LUMBERJACKD!</div>
+                        <div class="duration">1:34</div>
+                    </div>
+                </div>
+                <div class="track-controls">
+                    <div class="save" title="Add to Saved">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                    <div class="add-to-nextup" title="Add to next-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="track-wrap">
+                <div class="track">
+                    <div class="cover">
+                    <img src="img/artworks-yxgGEU2mB6JMnqpz-JQ4Znw-t240x240.jpg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </div>
+                    <div class="track-info">
+                        <div class="artist">san, anko, mariin</div>
+                        <div class="name">conversations.</div>
+                        <div class="duration">2:01</div>
+                    </div>
+                </div>
+                <div class="track-controls">
+                    <div class="save" title="Add to Saved">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                    <div class="add-to-nextup" title="Add to next-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="track-wrap">
+                <div class="track">
+                    <div class="cover">
+                    <img src="img/artworks-CQMZByZQMiornQEs-Rt4u3A-t500x500.jpg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </div>
+                    <div class="track-info">
+                        <div class="artist">stxrm808</div>
+                        <div class="name">this hard ngl</div>
+                        <div class="duration">1:45</div>
+                    </div>
+                </div>
+                <div class="track-controls">
+                    <div class="save" title="Add to Saved">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                    <div class="add-to-nextup" title="Add to next-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="track-wrap">
+                <div class="track">
+                    <div class="cover">
+                    <img src="img/artworks-tjGU21ErJl9UCyla-w8RaUw-t240x240.jpg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </div>
+                    <div class="track-info">
+                        <div class="artist">that boi retroll</div>
+                        <div class="name">the truth</div>
+                        <div class="duration">1:33</div>
+                    </div>
+                </div>
+                <div class="track-controls">
+                    <div class="save" title="Add to Saved">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                    <div class="add-to-nextup" title="Add to next-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="track-wrap">
+                <div class="track">
+                    <div class="cover">
+                    <img src="img/20221203_101037.jpg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </div>
+                    <div class="track-info">
+                        <div class="artist">grvmmy</div>
+                        <div class="name">monika</div>
+                        <div class="duration">2:02</div>
+                    </div>
+                </div>
+                <div class="track-controls">
+                    <div class="save" title="Add to Saved">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                    <div class="add-to-nextup" title="Add to next-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="track-wrap">
+                <div class="track">
+                    <div class="cover">
+                    <img src="img/artworks-24UT7UzWHbeNAya7-4R911Q-t500x500.jpg" alt="">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </div>
+                    <div class="track-info">
+                        <div class="artist">Kordhell</div>
+                        <div class="name">Murder in my mind</div>
+                        <div class="duration">2:15</div>
+                    </div>
+                </div>
+                <div class="track-controls">
+                    <div class="save" title="Add to Saved">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                    <div class="add-to-nextup" title="Add to next-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="library-wrap">
+        <div class="containerCont">
+            <div class="wrap history">
+                <h1>History</h1>
+                <div class="line">
+                    <div class="wrap-item artist">
+                        <img src="img/avatar.jpg" alt="">
+                        <span>grvmmy</span>
+                        <span class="type">Artist</span>
+                    </div>
+                    <div class="wrap-item track">
+                        <img src="img/artworks-24UT7UzWHbeNAya7-4R911Q-t500x500.jpg" alt="">
+                        <span class="artist">Kordhell</span>
+                        <span class="track-name">Murder in my mind</span>
+                     </div>
+                     <div class="wrap-item track">
+                        <img src="img/artworks-CQMZByZQMiornQEs-Rt4u3A-t500x500.jpg" alt="">
+                        <span class="artist">stxrm808</span>
+                        <span class="track-name">this hard ngl</span>
+                     </div>
+                     <div class="wrap-item artist">
+                        <img src="img/artworks-yxgGEU2mB6JMnqpz-JQ4Znw-t240x240.jpg" alt="">
+                        <span>san</span>
+                        <span class="type">Artist</span>
+                    </div>
+                    <div class="wrap-item track">
+                        <img src="img/artworks-5UYmyfkrHXX0Xx1M-miKWhw-t500x500.jpg" alt="">
+                        <span class="artist">Stedry</span>
+                        <span class="track-name">Arkham</span>
+                     </div>
+                     <div class="wrap-item artist">
+                        <img src="img/avatar.jpg" alt="">
+                        <span>grvmmy</span>
+                        <span class="type">Artist</span>
+                    </div>
+                    <div class="wrap-item track">
+                        <img src="img/artworks-24UT7UzWHbeNAya7-4R911Q-t500x500.jpg" alt="">
+                        <span class="artist">Kordhell</span>
+                        <span class="track-name">Murder in my mind</span>
+                     </div>
+                     <div class="wrap-item track">
+                        <img src="img/artworks-CQMZByZQMiornQEs-Rt4u3A-t500x500.jpg" alt="">
+                        <span class="artist">stxrm808</span>
+                        <span class="track-name">this hard ngl</span>
+                     </div>
+                     <div class="wrap-item artist">
+                        <img src="img/artworks-yxgGEU2mB6JMnqpz-JQ4Znw-t240x240.jpg" alt="">
+                        <span>san</span>
+                        <span class="type">Artist</span>
+                    </div>
+                    <div class="wrap-item track">
+                        <img src="img/artworks-5UYmyfkrHXX0Xx1M-miKWhw-t500x500.jpg" alt="">
+                        <span class="artist">Stedry</span>
+                        <span class="track-name">Arkham</span>
+                     </div>
+                     <div class="wrap-item artist">
+                        <img src="img/avatar.jpg" alt="">
+                        <span>grvmmy</span>
+                        <span class="type">Artist</span>
+                    </div>
+                    <div class="wrap-item track">
+                        <img src="img/artworks-24UT7UzWHbeNAya7-4R911Q-t500x500.jpg" alt="">
+                        <span class="artist">Kordhell</span>
+                        <span class="track-name">Murder in my mind</span>
+                     </div>
+                     <div class="wrap-item track">
+                        <img src="img/artworks-CQMZByZQMiornQEs-Rt4u3A-t500x500.jpg" alt="">
+                        <span class="artist">stxrm808</span>
+                        <span class="track-name">this hard ngl</span>
+                     </div>
+                     <div class="wrap-item artist">
+                        <img src="img/artworks-yxgGEU2mB6JMnqpz-JQ4Znw-t240x240.jpg" alt="">
+                        <span>san</span>
+                        <span class="type">Artist</span>
+                    </div>
+                </div>
+            </div>
+            <div class="wrap playlists">
+                <h1>Playlists</h1>
+                <div class="line">
+                    <div class="likes playlist" title="Liked tracks">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                    <div class="saved playlist" title="Saved tracks">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </div>
+                    <div class="create playlist" title="Create new playlist">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 112v288M400 256H112"/></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="youandsettings">
+        <div class="containerCont">
+            <h1>You and settings</h1>
+            <div class="user-data">
+                <div class="info">
+                    <img src="img/avatar.jpg" alt="">
+                    <span>grvmmy</span>
+                </div>
+                <button>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M364.13 125.25L87 403l-23 45 44.99-23 277.76-277.13-22.62-22.62zM420.69 68.69l-22.62 22.62 22.62 22.63 22.62-22.63a16 16 0 000-22.62h0a16 16 0 00-22.62 0z"/>
+                    </svg>
+                    Edit
+                </button>
+            </div>
+            <nav>
+                <div class="item cust">
+                    <div class="top">
+                        <div class="text">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M64 144h226.75a48 48 0 0090.5 0H448a16 16 0 000-32h-66.75a48 48 0 00-90.5 0H64a16 16 0 000 32zM448 368h-66.75a48 48 0 00-90.5 0H64a16 16 0 000 32h226.75a48 48 0 0090.5 0H448a16 16 0 000-32zM448 240H221.25a48 48 0 00-90.5 0H64a16 16 0 000 32h66.75a48 48 0 0090.5 0H448a16 16 0 000-32z"/></svg>
+                            Customize
+                        </div>
+                        <div class="beta">
+                            beta
+                        </div>
+                    </div>
+                    <span class="desc">
+                        Customize the look of the app. Choose from many options to suit your taste. Remember that some settings can reduce the productivity of your device, or vice versa - increase it! All actions you perform at your own peril and risk.
+                    </span>
+                </div>
+                <div class="item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M473 39.05a24 24 0 00-25.5-5.46L47.47 185h-.08a24 24 0 001 45.16l.41.13 137.3 58.63a16 16 0 0015.54-3.59L422 80a7.07 7.07 0 0110 10L226.66 310.26a16 16 0 00-3.59 15.54l58.65 137.38c.06.2.12.38.19.57 3.2 9.27 11.3 15.81 21.09 16.25h1a24.63 24.63 0 0023-15.46L478.39 64.62A24 24 0 00473 39.05z"/></svg>
+                    Submit your idea
+                </div>
+                <div class="item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M95.5 104h320a87.73 87.73 0 0111.18.71 66 66 0 00-77.51-55.56L86 94.08h-.3a66 66 0 00-41.07 26.13A87.57 87.57 0 0195.5 104zM415.5 128h-320a64.07 64.07 0 00-64 64v192a64.07 64.07 0 0064 64h320a64.07 64.07 0 0064-64V192a64.07 64.07 0 00-64-64zM368 320a32 32 0 1132-32 32 32 0 01-32 32z"/><path d="M32 259.5V160c0-21.67 12-58 53.65-65.87C121 87.5 156 87.5 156 87.5s23 16 4 16-18.5 24.5 0 24.5 0 23.5 0 23.5L85.5 236z"/></svg>
+                    Support us
+                </div>
+                <div class="item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M439.91 112h-23.82a.09.09 0 00-.09.09V416a32 32 0 0032 32 32 32 0 0032-32V152.09A40.09 40.09 0 00439.91 112z"/><path d="M384 416V72a40 40 0 00-40-40H72a40 40 0 00-40 40v352a56 56 0 0056 56h342.85a1.14 1.14 0 001.15-1.15 1.14 1.14 0 00-.85-1.1A64.11 64.11 0 01384 416zM96 128a16 16 0 0116-16h64a16 16 0 0116 16v64a16 16 0 01-16 16h-64a16 16 0 01-16-16zm208 272H112.45c-8.61 0-16-6.62-16.43-15.23A16 16 0 01112 368h191.55c8.61 0 16 6.62 16.43 15.23A16 16 0 01304 400zm0-64H112.45c-8.61 0-16-6.62-16.43-15.23A16 16 0 01112 304h191.55c8.61 0 16 6.62 16.43 15.23A16 16 0 01304 336zm0-64H112.45c-8.61 0-16-6.62-16.43-15.23A16 16 0 01112 240h191.55c8.61 0 16 6.62 16.43 15.23A16 16 0 01304 272zm0-64h-63.55c-8.61 0-16-6.62-16.43-15.23A16 16 0 01240 176h63.55c8.61 0 16 6.62 16.43 15.23A16 16 0 01304 208zm0-64h-63.55c-8.61 0-16-6.62-16.43-15.23A16 16 0 01240 112h63.55c8.61 0 16 6.62 16.43 15.23A16 16 0 01304 144z"/></svg>
+                    Our channel
+                </div>
+                <div class="item">
+                    <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.5 10.1833C17.5 5.60833 13.95 2.5 10 2.5C6.09167 2.5 2.50001 5.54167 2.50001 10.2333C2.00001 10.5167 1.66667 11.05 1.66667 11.6667V13.3333C1.66667 14.25 2.41667 15 3.33334 15C3.79167 15 4.16667 14.625 4.16667 14.1667V10.1583C4.16667 6.96667 6.625 4.175 9.81667 4.08333C10.5978 4.05958 11.3757 4.19286 12.1044 4.47529C12.8331 4.75771 13.4976 5.18353 14.0587 5.72751C14.6198 6.27149 15.066 6.92256 15.3708 7.64215C15.6756 8.36173 15.8329 9.13518 15.8333 9.91667V15.8333H10C9.54167 15.8333 9.16667 16.2083 9.16667 16.6667C9.16667 17.125 9.54167 17.5 10 17.5H15.8333C16.75 17.5 17.5 16.75 17.5 15.8333V14.8167C17.9917 14.5583 18.3333 14.05 18.3333 13.45V11.5333C18.3333 10.95 17.9917 10.4417 17.5 10.1833Z"/>
+                        <path d="M7.50001 11.6667C7.96024 11.6667 8.33334 11.2936 8.33334 10.8333C8.33334 10.3731 7.96024 10 7.50001 10C7.03977 10 6.66667 10.3731 6.66667 10.8333C6.66667 11.2936 7.03977 11.6667 7.50001 11.6667Z"/>
+                        <path d="M12.5 11.6667C12.9602 11.6667 13.3333 11.2936 13.3333 10.8333C13.3333 10.3731 12.9602 10 12.5 10C12.0398 10 11.6667 10.3731 11.6667 10.8333C11.6667 11.2936 12.0398 11.6667 12.5 11.6667Z"/>
+                        <path d="M15 9.19167C14.8013 8.02011 14.1945 6.95664 13.287 6.18948C12.3796 5.42233 11.23 5.00098 10.0417 5C7.51667 5 4.8 7.09167 5.01667 10.375C6.04428 9.95449 6.95187 9.28624 7.65852 8.42982C8.36518 7.5734 8.84894 6.55543 9.06667 5.46667C10.1583 7.65833 12.4 9.16667 15 9.19167Z"/>
+                    </svg>
+                    Support
+                </div>
+                <div class="item">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M478.33 433.6l-90-218a22 22 0 00-40.67 0l-90 218a22 22 0 1040.67 16.79L316.66 406h102.67l18.33 44.39A22 22 0 00458 464a22 22 0 0020.32-30.4zM334.83 362L368 281.65 401.17 362zM267.84 342.92a22 22 0 00-4.89-30.7c-.2-.15-15-11.13-36.49-34.73 39.65-53.68 62.11-114.75 71.27-143.49H330a22 22 0 000-44H214V70a22 22 0 00-44 0v20H54a22 22 0 000 44h197.25c-9.52 26.95-27.05 69.5-53.79 108.36-31.41-41.68-43.08-68.65-43.17-68.87a22 22 0 00-40.58 17c.58 1.38 14.55 34.23 52.86 83.93.92 1.19 1.83 2.35 2.74 3.51-39.24 44.35-77.74 71.86-93.85 80.74a22 22 0 1021.07 38.63c2.16-1.18 48.6-26.89 101.63-85.59 22.52 24.08 38 35.44 38.93 36.1a22 22 0 0030.75-4.9z"/></svg>
+                    Language
+                </div>
+            </nav>
+        </div>
+    </div>
+    <script src="js/player.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+</html>
