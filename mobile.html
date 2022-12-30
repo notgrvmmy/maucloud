@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#131313">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#000000">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/mobile.css">
+    
+    <title>MauCloud</title>
+</head>
+<body>
+    <header>
+        <input type="text">
+        <div class="search">
+            <button><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z"/></svg></button>
+        </div>
+    </header>
+    <div class="container">
+        <div class="playlists">
+            <div class="item first">
+                <div class="cover">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                </div>
+                <span>Liked tracks</span>
+            </div>
+            <div class="item second">
+                <div class="cover">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><rect x="64" y="176" width="384" height="256" rx="28.87" ry="28.87" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32" d="M144 80h224M112 128h288"/></svg>
+                </div>
+                <span>For you</span>
+            </div>
+            <div class="item third">
+                <div class="cover">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                </div>
+                <span>Saved</span>
+            </div>
+        </div>
+        <div class="tracks-wrap">
+            <div class="track-item">
+                <div class="info">
+                    <div class="cover">
+                        <img src="img/artworks-018tcsaNdUylK6ZG-Zqmzmg-t500x500.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="artist">bsterthegawd</div>
+                        <div class="track-name">Just for you.</div>
+                        <div class="duration">2:14</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="save">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="nextup">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>List</title><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="track-item">
+                <div class="info">
+                    <div class="cover">
+                        <img src="img/artworks-5UYmyfkrHXX0Xx1M-miKWhw-t500x500.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="artist">Stedry</div>
+                        <div class="track-name">Arkham</div>
+                        <div class="duration">2:13</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="save">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="nextup">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>List</title><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="track-item">
+                <div class="info">
+                    <div class="cover">
+                        <img src="img/artworks-CQMZByZQMiornQEs-Rt4u3A-t500x500.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="artist">stxrm808</div>
+                        <div class="track-name">this hard ngl</div>
+                        <div class="duration">2:13</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="save">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="nextup">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>List</title><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="track-item">
+                <div class="info">
+                    <div class="cover">
+                        <img src="img/artworks-018tcsaNdUylK6ZG-Zqmzmg-t500x500.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="artist">bsterthegawd</div>
+                        <div class="track-name">Just for you.</div>
+                        <div class="duration">2:14</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="save">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="nextup">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>List</title><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="track-item">
+                <div class="info">
+                    <div class="cover">
+                        <img src="img/artworks-5UYmyfkrHXX0Xx1M-miKWhw-t500x500.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="artist">Stedry</div>
+                        <div class="track-name">Arkham</div>
+                        <div class="duration">2:13</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="save">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="nextup">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>List</title><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="track-item">
+                <div class="info">
+                    <div class="cover">
+                        <img src="img/artworks-CQMZByZQMiornQEs-Rt4u3A-t500x500.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="artist">stxrm808</div>
+                        <div class="track-name">this hard ngl</div>
+                        <div class="duration">2:13</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="save">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="nextup">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>List</title><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="track-item">
+                <div class="info">
+                    <div class="cover">
+                        <img src="img/artworks-018tcsaNdUylK6ZG-Zqmzmg-t500x500.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="artist">bsterthegawd</div>
+                        <div class="track-name">Just for you.</div>
+                        <div class="duration">2:14</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="save">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="nextup">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>List</title><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="track-item">
+                <div class="info">
+                    <div class="cover">
+                        <img src="img/artworks-5UYmyfkrHXX0Xx1M-miKWhw-t500x500.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="artist">Stedry</div>
+                        <div class="track-name">Arkham</div>
+                        <div class="duration">2:13</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="save">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="nextup">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>List</title><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="track-item">
+                <div class="info">
+                    <div class="cover">
+                        <img src="img/artworks-CQMZByZQMiornQEs-Rt4u3A-t500x500.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="artist">stxrm808</div>
+                        <div class="track-name">this hard ngl</div>
+                        <div class="duration">2:13</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="save">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="nextup">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>List</title><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </button>
+                </div>
+            </div>
+            <div class="track-item">
+                <div class="info">
+                    <div class="cover">
+                        <img src="img/artworks-018tcsaNdUylK6ZG-Zqmzmg-t500x500.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="artist">bsterthegawd</div>
+                        <div class="track-name">Just for you.</div>
+                        <div class="duration">2:14</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="save">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="nextup">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>List</title><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="track-item">
+                <div class="info">
+                    <div class="cover">
+                        <img src="img/artworks-5UYmyfkrHXX0Xx1M-miKWhw-t500x500.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="artist">Stedry</div>
+                        <div class="track-name">Arkham</div>
+                        <div class="duration">2:13</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="save">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="nextup">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>List</title><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="track-item">
+                <div class="info">
+                    <div class="cover">
+                        <img src="img/artworks-CQMZByZQMiornQEs-Rt4u3A-t500x500.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <div class="artist">stxrm808</div>
+                        <div class="track-name">this hard ngl</div>
+                        <div class="duration">2:13</div>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button class="save">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352 48H160a48 48 0 00-48 48v368l144-128 144 128V96a48 48 0 00-48-48z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="nextup">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><title>List</title><path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+                    </button>
+                    <button class="play">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="home active">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212" stroke-linecap="round" stroke-linejoin="round"/><path d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256M400 179V64h-48v69" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="library">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect x="32" y="96" width="64" height="368" rx="16" ry="16" stroke-linejoin="round"/><path stroke-linecap="round" stroke-linejoin="round" d="M112 224h128M112 400h128"/><rect x="112" y="160" width="128" height="304" rx="16" ry="16" stroke-linejoin="round"/><rect x="256" y="48" width="96" height="416" rx="16" ry="16" stroke-linejoin="round"/><path d="M422.46 96.11l-40.4 4.25c-11.12 1.17-19.18 11.57-17.93 23.1l34.92 321.59c1.26 11.53 11.37 20 22.49 18.84l40.4-4.25c11.12-1.17 19.18-11.57 17.93-23.1L445 115c-1.31-11.58-11.42-20.06-22.54-18.89z" stroke-linejoin="round"/></svg>
+        </div>
+        <div class="more">
+            <img src="img/avatar.jpg" alt="">
+        </div>
+    </footer>
+    
+    <div class="player">
+        <div class="bg"></div>
+        <div class="track-info">
+            <div class="cover" onclick="playpauseTrack()"></div>
+            <div class="info">
+                <div class="artist">Unknown</div>
+                <div class="name">Untitled</div>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="curr-time">00:00</div>
+            <span class="dot"></span>
+            <button class="nextup"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 144h288M160 256h288M160 368h288"/><circle cx="80" cy="144" r="16" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="256" r="16" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><circle cx="80" cy="368" r="16" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg></button>
+            
+            <button class="like"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M352.92 80C288 80 256 144 256 144s-32-64-96.92-64c-52.76 0-94.54 44.14-95.08 96.81-1.1 109.33 86.73 187.08 183 252.42a16 16 0 0018 0c96.26-65.34 184.09-143.09 183-252.42-.54-52.67-42.32-96.81-95.08-96.81z" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg></button>
+            
+            <button class="playpause" onclick="playpauseTrack()"><svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M133 440a35.37 35.37 0 01-17.5-4.67c-12-6.8-19.46-20-19.46-34.33V111c0-14.37 7.46-27.53 19.46-34.33a35.13 35.13 0 0135.77.45l247.85 148.36a36 36 0 010 61l-247.89 148.4A35.5 35.5 0 01133 440z"/></svg></button>
+        </div>
+    </div>
+    
+    <script type="application/javascript" src="js/mobile.js"></script>
+    <script type="application/javascript" src="js/mobile-player.js"></script>
+</body>
+</html>
