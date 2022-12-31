@@ -33,16 +33,19 @@ home.addEventListener('click', () => {
     home.classList.add('active');
     library.classList.remove('active');
     more.classList.remove('active');
+    document.querySelector('.player').style.bottom = '';
 })
 
 library.addEventListener('click', () => {
     home.classList.remove('active');
     library.classList.add('active');
     more.classList.remove('active');
+    document.querySelector('.player').style.bottom = '';
 })
 
 more.addEventListener('click', () => {
     home.classList.remove('active');
     library.classList.remove('active');
     more.classList.add('active');
+    document.querySelector('.player').style.bottom = '-300px';
 })

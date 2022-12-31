@@ -15,7 +15,7 @@ let updateTimer;
 
 const music_list = [
     {
-        img : '/img/artworks-24UT7UzWHbeNAya7-4R911Q-t500x500.jpg',
+        img : './img/artworks-24UT7UzWHbeNAya7-4R911Q-t500x500.jpg',
         name : 'Murder In My Mind',
         artist : 'Kordhell',
         music : './music/Murder In My Mind.mp3'
@@ -108,7 +108,7 @@ const music_list = [
         img : './img/artworks-GeWYjgahnKRdkzKP-teU1qg-t240x240.jpg',
         name : 'revelation',
         artist : 'stedry',
-        music : './music/revelation.mp3'
+        music : './music/Revelation.mp3'
     }
 ];
 

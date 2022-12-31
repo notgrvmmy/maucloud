@@ -232,6 +232,7 @@ footer {
     position: fixed;
     left: 0;
     bottom: 0;
+    z-index: 100;
 }
 
 footer div {
@@ -279,6 +280,8 @@ footer div.active img {
     justify-content: space-between;
     background: #000;
     overflow: hidden;
+    transition: 1s cubic-bezier(1,-0.08,.51,.94);
+    z-index: 99;
 }
 
 .player .bg {
