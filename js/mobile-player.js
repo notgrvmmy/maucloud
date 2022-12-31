@@ -15,100 +15,100 @@ let updateTimer;
 
 const music_list = [
     {
-        img : '../img/artworks-24UT7UzWHbeNAya7-4R911Q-t500x500.jpg',
+        img : '/img/artworks-24UT7UzWHbeNAya7-4R911Q-t500x500.jpg',
         name : 'Murder In My Mind',
         artist : 'Kordhell',
-        music : '../music/Murder In My Mind.mp3'
+        music : './music/Murder In My Mind.mp3'
     },
     {
-        img : '../img/artworks-tuB9VPmWG9KyRAff-GNkdwQ-t240x240.jpg',
+        img : './img/artworks-tuB9VPmWG9KyRAff-GNkdwQ-t240x240.jpg',
         name : 'Good Luck*+_ :)',
         artist : 'stedry',
-        music : '../music/Good luck.mp3'
+        music : './music/Good luck.mp3'
     },
     {
-        img : '../img/artworks-018tcsaNdUylK6ZG-Zqmzmg-t500x500.jpg',
+        img : './img/artworks-018tcsaNdUylK6ZG-Zqmzmg-t500x500.jpg',
         name : 'Just for you.',
         artist : 'bsterthegawd',
-        music : '../music/Just for you.mp3'
+        music : './music/Just for you.mp3'
     },
     {
-        img : '../img/20221203_101037.jpg',
+        img : './img/20221203_101037.jpg',
         name : 'monika.',
         artist : 'grammy',
-        music : '../music/monika.mp3'
+        music : './music/monika.mp3'
     },
     {
-        img : '../img/artworks-xIKYFG7WxtMucLZg-WXHkEw-t500x500.jpg',
+        img : './img/artworks-xIKYFG7WxtMucLZg-WXHkEw-t500x500.jpg',
         name : 'Live another day',
         artist : 'Kordhell',
-        music : '../music/Live another day.mp3'
+        music : './music/Live another day.mp3'
     },
     {
-        img : '../img/artworks-5UYmyfkrHXX0Xx1M-miKWhw-t500x500.jpg',
+        img : './img/artworks-5UYmyfkrHXX0Xx1M-miKWhw-t500x500.jpg',
         name : 'Arkham',
         artist : 'stedry',
-        music : '../music/Arkham.mp3'
+        music : './music/Arkham.mp3'
     },
     {
-        img : '../img/artworks-yxgGEU2mB6JMnqpz-JQ4Znw-t240x240.jpg',
+        img : './img/artworks-yxgGEU2mB6JMnqpz-JQ4Znw-t240x240.jpg',
         name : 'conversations.',
         artist : 'san, anko, mariin',
-        music : '../music/conversations.mp3'
+        music : './music/conversations.mp3'
     },
     {
-        img : '../img/ab67616d0000b2734d7cfa6ee20d2b0445b7dd1d.jpg',
+        img : './img/ab67616d0000b2734d7cfa6ee20d2b0445b7dd1d.jpg',
         name : 'LUMBERJACKD!',
         artist : 'JsMn',
-        music : '../music/LUMBERJACKD!.mp3'
+        music : './music/LUMBERJACKD!.mp3'
     },
     {
-        img : '../img/artworks-0XvzB1hnkD95OT4r-ZtzgMQ-t240x240.jpg',
+        img : './img/artworks-0XvzB1hnkD95OT4r-ZtzgMQ-t240x240.jpg',
         name : 'without forgiveness (clip)',
         artist : 'kedalos',
-        music : '../music/without forgiveness (clip).mp3'
+        music : './music/without forgiveness (clip).mp3'
     },
     {
-        img : '../img/artworks-CQMZByZQMiornQEs-Rt4u3A-t500x500.jpg',
+        img : './img/artworks-CQMZByZQMiornQEs-Rt4u3A-t500x500.jpg',
         name : 'this hard ngl',
         artist : 'stxrm808',
-        music : '../music/this hard ngl.mp3'
+        music : './music/this hard ngl.mp3'
     },
     {
-        img : '../img/shake.jpg',
+        img : './img/shake.jpg',
         name : 'SHAKE.',
         artist : 'CRIMTEK, SYNGE, AXIUM',
-        music : '../music/SHAKE.mp3'
+        music : './music/SHAKE.mp3'
     },
     {
-        img : '../img/artworks-QQWd6zyK2GV8UgyF-eJK6Ag-t500x500.jpg',
+        img : './img/artworks-QQWd6zyK2GV8UgyF-eJK6Ag-t500x500.jpg',
         name : 'shaterred.',
         artist : 'stedry',
-        music : '../music/shattered.mp3'
+        music : './music/shattered.mp3'
     },
     {
-        img : '../img/artworks-tjGU21ErJl9UCyla-w8RaUw-t240x240.jpg',
+        img : './img/artworks-tjGU21ErJl9UCyla-w8RaUw-t240x240.jpg',
         name : 'the truth',
         artist : 'that boi retroll',
-        music : '../music/the truth.mp3'
+        music : './music/the truth.mp3'
     },
     {
-        img : '../img/artworks-UWT7E8mtZv0GszTV-qtgzZw-t500x500.jpg',
+        img : './img/artworks-UWT7E8mtZv0GszTV-qtgzZw-t500x500.jpg',
         name : 'vertigo.',
         artist : 'Scorpiioh, south',
-        music : '../music/vertigo.mp3'
+        music : './music/vertigo.mp3'
     },
     {
-        img : '../img/artworks-fAmuFQYGzKD78KdV-fGvRIw-t500x500.jpg',
+        img : './img/artworks-fAmuFQYGzKD78KdV-fGvRIw-t500x500.jpg',
         name : 'golden.',
         artist : 'Scorpiioh, TSK',
-        music : '../music/golden.mp3'
+        music : './music/golden.mp3'
     },
     {
-        img : '../img/artworks-GeWYjgahnKRdkzKP-teU1qg-t240x240.jpg',
+        img : './img/artworks-GeWYjgahnKRdkzKP-teU1qg-t240x240.jpg',
         name : 'revelation',
         artist : 'stedry',
-        music : '../music/revelation.mp3'
+        music : './music/revelation.mp3'
     }
 ];
 
